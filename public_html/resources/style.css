@@ -1,0 +1,111 @@
+.contDiv
+{
+    margin-top: 5%;    
+}
+
+
+
+
+
+#nombreap
+{
+    margin-left: 36%;
+}
+
+.msjin
+{
+    color:black;
+    text-align: center;
+}
+
+td
+{
+    padding: 8px;
+}
+
+li
+{
+    padding: 8px;
+}
+
+.liEd
+{
+    margin-left: 15%;
+    list-style-type: none;
+    
+}
+
+#datosEducacion
+{
+    margin-top: 5%;
+}
+
+#datosPersonales
+{
+    margin-top: 5%;
+}
+
+#fotoPerfil
+{
+    height: 250px;
+    width: 250px;
+    float: right;
+    margin-right: 10%;
+}
+
+.labldatos
+{
+    margin-left: 15.5%;
+    font-size: 22px;
+}
+
+#table1
+{
+    margin-top: 1%;
+    border-collapse: collapse;
+    width: 30%;
+    margin-left: 15%;
+    font-size: 17px;
+}
+
+.mySpan
+{
+    margin-left: 5px;
+}
+
+.btn-theme
+{
+    
+    margin-left: -90px;    
+    padding: 10px;
+    margin-top: 4%;
+}
+
+#darkt
+{
+    background-color: black;
+    color:white;
+    margin-left: 1%;
+    
+}
+
+#lightt
+{
+    background-color: peru;
+    color:black;    
+    margin-right: 5px;
+    margin-left: 1%;
+}
+
+#tituloPrincipal
+{
+    text-align: center;
+    margin-top: -3%;
+    margin-left: -8%;
+    font-size: 45px;
+}
+
+#mainBody
+{
+    background-color: peru;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Federico Franco</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="resources/style.css">
+        <script type="text/javascript" src="resources/script1.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+        
+    </head>
+    
+    <body id="mainBody">
+        <header>
+            <button onclick="changeLight()" class="btn-theme" id="lightt">Brick Theme</button>
+            <button onclick="changeDark()" class="btn-theme" id="darkt">Dark Theme</button>
+            <h1 id="tituloPrincipal">Curriculum Vitae</h1>
+            <h2 id="nombreap">Federico Agustin Franco</h2>
+        </header>
+        
+        <img id="fotoPerfil" src="resources/giphy.gif">
+        
+        <div id="datosPersonales" class="contDiv">
+            
+            <label class="labldatos">Datos Personales:</label>
+            
+            <table id="table1">
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i> <span class="mySpan">Email</span> </td>
+                        <td>federicoafranco97@gmail.com </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-home"></i> <span class="mySpan">Direccion</span> </td>
+                        <td>Pedro Goyena 3520 (Olivos)</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-user"></i> <span class="mySpan">Edad</span></td>
+                        <td>21 Años</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-id-card"></i> <span class="mySpan">DNI</span> </td>
+                        <td>40.762.405</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-mobile-alt"></i> <span class="mySpan">Celular</span> </td>
+                        <td>01161507637</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="datosEducacion" class="contDiv">
+            <label class="labldatos">Educación:</label>
+            <ul class="liEd">
+                <li><i class="fas fa-graduation-cap"></i> Colegio Jesus en el Huerto de los Olivos, Nivel primario y Secundario. Orientacion en Exactas</li>
+                <li><i class="fas fa-graduation-cap"></i> Universidad de Belgrano, Carrera: Tecnicatura en Programacion. Actualmente cursando segundo año.</li>
+                <li><i class="fas fa-graduation-cap"></i> Educacion IT, nivel terciario. Cursos: Java para no Programadores, Java Standard Programming.</li>                
+            </ul>
+        </div>
+        
+        <div id="expLaboral" class="contDiv">
+            <label class="labldatos">Experiencia Laboral:</label>
+            <ul class="liEd">
+                <li><i class="fas fa-building"></i> NAIARG, Showcase Cinema, empleado de Box-Office. 
+                    <span onclick="showSC()">Ver mas</span></li>
+                <li><i class="fas fa-building"></i> MOVASIM, Junion Full Stack Developer. Desarrollador junior de aplicaciones web. 
+                    <span onclick="showMS()">Ver mas</span></li>
+                
+                               
+            </ul>
+        </div>
+        
+        <div id="divIdiomas" class="contDiv">
+            <label class="labldatos">Idiomas:</label>
+            <ul class="liEd">
+                <li><i class="fas fa-microphone-alt"></i> Ingles. Nivel avanzado, certificados FCE (Cambridge English First)
+                    ,CAE (Certificate of Advanced English)</li>
+                <li><i class="fas fa-microphone-alt"></i>Frances. Nivel inicial, certificado Delf A1 (Alianza Francesa).</li>
+            </ul>
+        </div>
+        
+        <div id="divHobbies" class="contDiv">
+            <label class="labldatos">Hobbies:</label>
+            <ul class="liEd">
+                <li><i class="fas fa-bicycle"></i> Taekwondo: Cinturon Negro 1er Dan, (Institucion ITF).</li>
+                <li><i class="fas fa-bicycle"></i> Natacion: Competencias intercolegiales y competencias municipales.</li>
+            </ul>
+        </div>
+
+        
+    </body>
+</html>
