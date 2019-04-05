@@ -3,9 +3,49 @@
     margin-top: 5%;    
 }
 
+#menuNav
+{
+    position: fixed;
+    top: 0;
+    margin-top: 10%;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
 
+.lblln
+{
+    color:white;
+}
 
+#navUl
+{
+    border: 2px solid black;
+    
+    
+}
 
+table#navUl td:hover,#lblGit
+{
+    cursor: pointer;
+}
+
+button
+{
+    cursor: pointer;
+    outline: none;
+}
+
+#textoObj
+{
+    width: 50%;
+    margin-left: 18%;
+}
+
+#restoTxt
+{
+    margin-left: 2%;
+}
 
 #nombreap
 {
@@ -90,16 +130,8 @@ li
     
 }
 
-#btnContacto
-{
-    float: right;
-    padding: 10px;
-    background-color: black;
-    color:white;
-    margin-right: 2%;
-    margin-top: -4%;
-    
-}
+
+
 
 .myLbl
 {

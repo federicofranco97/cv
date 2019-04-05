@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onload="startMusic()">
     <head>
         <title>Federico Franco</title>
         <meta charset="UTF-8">
@@ -22,11 +22,11 @@
             <button onclick="changeLight()" class="btn-theme" id="lightt">Brick Theme</button>
             <button onclick="changeDark()" class="btn-theme" id="darkt">Dark Theme</button>
             <h1 id="tituloPrincipal">Curriculum Vitae</h1>
-            <button id="btnContacto" data-toggle="modal" data-target="#contactoModal">Conectar con Federico</button>
+            
             <h2 id="nombreap">Federico Agustin Franco</h2>
         </header>
         
-        
+        <div name="modalwindow">
             <div  id="contactoModal" class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -59,9 +59,25 @@
                   </div>
                 </div>
             </div>
-        
+        </div>
         
         <img id="fotoPerfil" src="resources/giphy.gif">
+        <audio src="resources/Gorillaz   Feel Good Inc (30 sec).mp3" id="musicaFondo" autoplay></audio>
+        <nav id="menuNav">
+            
+            <table id="navUl">
+                <tbody >
+                    <tr><td>Toolbar</td></tr>                    
+                    <tr><td id="playM" onclick="unmute()"><i class="fas fa-play"></i> Play</td></tr>
+                    <tr><td id="muteM" onclick="mute()"><i class="fas fa-pause"></i> Stop</td></tr>
+                    <tr><td><i class="fas fa-phone-square"></i><a data-toggle="modal" data-target="#contactoModal"> Contactar</a></td></tr>    
+                    <tr><td><a target="_blank" href="https://www.linkedin.com/in/federico-franco-2b7187170/"><label  class="lblln"><i class="fab fa-linkedin"></i> LinkedIn</label></a></td></tr>
+                    <tr><td><a target="_blank" href="https://github.com/federicofranco97?tab=repositories"><label  class="lblln"><i class="fab fa-github"></i> Github</label></a></td></tr>
+            
+                </tbody>
+            </table>
+            
+        </nav>
         
         <div id="datosPersonales" class="contDiv">
             
@@ -75,7 +91,7 @@
                     </tr>
                     <tr>
                         <td><i class="fas fa-home"></i> <span class="mySpan">Direccion</span> </td>
-                        <td>Pedro Goyena 3520 (Olivos)</td>
+                        <td>Pedro Goyena  (Olivos)</td>
                     </tr>
                     <tr>
                         <td><i class="fas fa-user"></i> <span class="mySpan">Edad</span></td>
@@ -101,6 +117,15 @@
                 <li><i class="fas fa-graduation-cap"></i> Educacion IT, nivel terciario. Cursos: Java para no Programadores, Java Standard Programming.</li>                
             </ul>
         </div>
+        
+        <div id="divObjetivos" class="contDiv">
+            <label class="labldatos">Objetivo:</label>
+            <p id="textoObj"><i class="fas fa-atom"></i> Contribuir con las aspiraciones de la companía, obteniendo experiencia como programador, asimilando 
+                los lenguajes y tecnicas que<span id="restoTxt"> utilice la misma, para poder continuar formandome como desarrollador y
+                    seguir enriqueciendo mis aptitudes y asi aumentar mi</span>  <span style="margin-left: 2%"> eficiencia laboral.</span>
+            </p>
+        </div>
+        
         
         <div id="expLaboral" class="contDiv">
             <label class="labldatos">Experiencia Laboral:</label>

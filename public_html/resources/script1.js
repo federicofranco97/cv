@@ -28,12 +28,24 @@ function disMsg(){
 
 function changeLight()
 {
-    document.getElementById("mainBody").style="background-color:peru;color:black";    
+    document.getElementById("mainBody").style="background-color:peru;color:black"; 
+    document.getElementById("menuNav").style="background-color:black;color:white;border:1px solid white;";
+    var elems= document.getElementsByClassName("lblln");
+    for (var i = 0; i < elems.length; i++) {
+        elems[i].style="color:white";
+        
+    }
 }
 
 function changeDark()
 {
-    document.getElementById("mainBody").style="background-color:black;color:white";   
+    document.getElementById("mainBody").style="background-color:black;color:white";
+    document.getElementById("menuNav").style="background-color:peru;color:black;border:1px solid white;";
+    var elems= document.getElementsByClassName("lblln");
+    for (var i = 0; i < elems.length; i++) {
+        elems[i].style="color:black";
+        
+    }
 }
 
 function showSC(){
@@ -58,4 +70,19 @@ function showMS(){
         text: msj,
         icon: "info"
     });
+}
+
+
+
+function mute(){
+    document.getElementById("musicaFondo").pause();
+ 
+}
+
+function unmute(){
+    document.getElementById("musicaFondo").play();
+}
+
+function startMusic(){
+    document.getElementById("musicaFondo").autoplay=true;
 }
