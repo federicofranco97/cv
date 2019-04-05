@@ -1,6 +1,7 @@
 .contDiv
 {
     margin-top: 5%;    
+    margin-left: 10%;
 }
 
 #menuNav
@@ -16,6 +17,11 @@
 .lblln
 {
     color:white;
+}
+
+.lblln:hover
+{
+    cursor: pointer;
 }
 
 #navUl
