@@ -22,8 +22,7 @@ function showSC(){
 function showMS(){
     var msj="Desarrollador Fullstack de aplicaciones web, uso y desarrollo\n\
          de vistas, models,DAOs, controllers, entre otros.\n\
-        Uso de: HTML, CSS, Bootsrap, JavaScript, Ajax, PostMan, Maven, Spring,\n\
-        SpringFramework, SpringBoot, Java.\n\
+        Uso de: HTML, CSS, Bootsrap, JavaScript, Ajax, PostMan, Maven, Spring,SpringFramework, SpringBoot, Java.\n\
         Periodo: 28/1/2019 hasta 1/3/2019";
     swal({
         className:"msjin",
