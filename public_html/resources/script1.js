@@ -7,6 +7,16 @@ function clearFields(){
 }
 
 function disMsg(){
+    if(document.getElementById("comName").value==="" || document.getElementById("comName").value===" "){
+       swal({
+            title: "Error al Contactar",
+            text: "Faltan Datos",
+            icon: "error"
+        }); 
+        return;
+        clearFields();
+    }
+    
     var msj="Empresa: "+document.getElementById("comName").value;
     swal({
         title: "Contacto Exitoso!",
