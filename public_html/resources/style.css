@@ -51,6 +51,7 @@ li
     width: 250px;
     float: right;
     margin-right: 10%;
+    margin-top: 5%;
 }
 
 .labldatos
@@ -89,6 +90,34 @@ li
     
 }
 
+#btnContacto
+{
+    float: right;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    margin-right: 25px;
+    margin-top: -6%;
+    
+}
+
+.myLbl
+{
+    color:black;
+}
+
+.inpModal
+{
+    width: 100%;
+}
+
+.divModal
+{
+    display: inline-block;
+    margin-bottom: 5%;
+    width: 390px;
+}
+
 #lightt
 {
     background-color: peru;
@@ -101,7 +130,7 @@ li
 {
     text-align: center;
     margin-top: -3%;
-    margin-left: -8%;
+    margin-left: -3.5%;
     font-size: 45px;
 }
 

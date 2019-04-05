@@ -1,3 +1,21 @@
+function clearFields(){
+    var listFields = document.getElementsByClassName("inpModal");
+    for (var i = 0; i < listFields.length; i++) {
+        listFields[i].value="";
+    }
+    
+}
+
+function disMsg(){
+    var msj="Empresa: "+document.getElementById("comName").value;
+    swal({
+        title: "Contacto Exitoso!",
+        text: msj,
+        icon: "success"
+    });
+    clearFields();
+}
+
 function changeLight()
 {
     document.getElementById("mainBody").style="background-color:peru;color:black";    

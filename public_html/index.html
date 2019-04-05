@@ -9,8 +9,12 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+        <!-- Bootstrap modal -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-        
     </head>
     
     <body id="mainBody">
@@ -18,8 +22,44 @@
             <button onclick="changeLight()" class="btn-theme" id="lightt">Brick Theme</button>
             <button onclick="changeDark()" class="btn-theme" id="darkt">Dark Theme</button>
             <h1 id="tituloPrincipal">Curriculum Vitae</h1>
+            <button id="btnContacto" data-toggle="modal" data-target="#contactoModal">Conectar con Federico</button>
             <h2 id="nombreap">Federico Agustin Franco</h2>
         </header>
+        
+        
+            <div  id="contactoModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 style="margin-left: 110px"> Informacion de Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearFields()">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                      <div class="modal-body" style="text-align: center">
+                        <div class="divModal">
+                            <label class="myLbl">Nombre de la Compania:</label>
+                            <input id="comName" class="inpModal" type="text" placeholder="Ingrese nombre Compania">
+                        </div> 
+                        <div class="divModal">
+                            <label class="myLbl">Ingrese numero de contacto:</label>
+                            <input class="inpModal" type="text" placeholder="Ingrese numero">
+                        </div> 
+                        <div class="divModal">
+                            <label class="myLbl">Ingrese un eMail de contacto</label>
+                            <input class="inpModal" type="text" placeholder="Ingrese Email">
+                        </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                style="width:100%;background-color:black;color:white" onclick="disMsg()">Send</button>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+        
         
         <img id="fotoPerfil" src="resources/giphy.gif">
         
