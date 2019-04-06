@@ -7,14 +7,16 @@ function clearFields(){
 }
 
 function disMsg(){
-    if(document.getElementById("comName").value==="" || document.getElementById("comName").value===" "){
+    var val1=document.getElementById("comName").value;
+    var val2=document.getElementById("comTel").value;
+    var val3=document.getElementById("comMail").value;
+    if(val1==="" || val1===" " || val2==="" || val2===" " || val3==="" || val3===" "){
        swal({
             title: "Error al Contactar",
             text: "Faltan Datos",
             icon: "error"
         }); 
         return;
-        clearFields();
     }
     
     var msj="Empresa: "+document.getElementById("comName").value;
@@ -83,6 +85,6 @@ function unmute(){
     document.getElementById("musicaFondo").play();
 }
 
-function startMusic(){
-    document.getElementById("musicaFondo").autoplay=true;
+function theme(){
+    changeDark();
 }

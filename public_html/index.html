@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html onload="startMusic()">
+<html>
     <head>
         <title>Federico Franco</title>
         <meta charset="UTF-8">
@@ -17,10 +17,10 @@
 
     </head>
     
-    <body id="mainBody">
+    <body id="mainBody" onload="theme()">
         <header>
-            <button onclick="changeLight()" class="btn-theme" id="lightt">Brick Theme</button>
-            <button onclick="changeDark()" class="btn-theme" id="darkt">Dark Theme</button>
+<!--            <button onclick="changeLight()" class="btn-theme" id="lightt">Brick Theme</button>
+            <button onclick="changeDark()" class="btn-theme" id="darkt">Dark Theme</button>-->
             <h1 id="tituloPrincipal">Curriculum Vitae</h1>
             
             
@@ -43,11 +43,11 @@
                         </div> 
                         <div class="divModal">
                             <label class="myLbl">Ingrese numero de contacto:</label>
-                            <input class="inpModal" type="text" placeholder="Ingrese numero">
+                            <input id="comTel" class="inpModal" type="text" placeholder="Ingrese numero">
                         </div> 
                         <div class="divModal">
                             <label class="myLbl">Ingrese un eMail de contacto</label>
-                            <input class="inpModal" type="text" placeholder="Ingrese Email">
+                            <input id="comMail" class="inpModal" type="text" placeholder="Ingrese Email">
                         </div>
                       
                     </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
         
-        <img id="fotoPerfil" src="resources/giphy.gif">
+        <img id="fotoPerfil" src="resources/43964230.jpg">
         <audio src="resources/Gorillaz   Feel Good Inc (30 sec).mp3" id="musicaFondo"></audio>
         <nav id="menuNav">
             
@@ -73,7 +73,8 @@
                     <tr><td><i class="fas fa-phone-square"></i><a data-toggle="modal" data-target="#contactoModal"> Contactar</a></td></tr>    
                     <tr><td><a target="_blank" href="https://www.linkedin.com/in/federico-franco-2b7187170/"><label  class="lblln"><i class="fab fa-linkedin"></i> LinkedIn</label></a></td></tr>
                     <tr><td><a target="_blank" href="https://github.com/federicofranco97?tab=repositories"><label  class="lblln"><i class="fab fa-github"></i> Github</label></a></td></tr>
-            
+                    <tr><td><i class="fas fa-palette"></i> <label class="lblln" onclick="changeLight()">BrickTheme</label></td></tr>
+                    <tr><td><i class="fas fa-palette"></i> <label class="lblln" onclick="changeDark()">DarkTheme</label></td></tr>
                 </tbody>
             </table>
             
