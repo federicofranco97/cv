@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini Juegos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="resources/style2.css">
+        <script type="text/javascript" src="resources/script2.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- Bootstrap modal -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    </head>
+    <body id="mainBody">
+        
+        <h1>Batalla naval</h1>
+        
+        <div id="Batalla-Naval">
+            <div id="tableroNaval">
+                <table class="table table-naval">
+                    
+                    <tbody>
+                        <tr>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)"  class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+              
+                        <tr>
+                            <td class="separator"></td>
+                            <td class="separator"></td>
+                            <td class="separator"></td>
+                            <td class="separator"></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                    </tbody>                    
+                </table>
+                <div id="controllers">
+                    <button class="startGame" onclick="assignAutomaticValues()">Start Game</button>
+                    <button class="startGame">Instructions</button>                
+                    <label id="scoreL">Score: 0</label>
+                    <button class="startGame" onclick="refresh()">Restart Game</button>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
