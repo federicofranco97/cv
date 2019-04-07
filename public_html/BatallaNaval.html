@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="resources/style2.css">
+        <link rel="stylesheet" type="text/css" href="resources/style1.css">
         <script type="text/javascript" src="resources/script2.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -21,8 +22,22 @@
         <h1>Batalla naval</h1>
         
         <div id="Batalla-Naval">
+            
+            <nav id="navBar">
+                <table id="navUl">
+                <tbody >
+                    <tr><td>Toolbar</td></tr>                    
+                    <tr><td class="link" onclick="assignAutomaticValues()"><i class="fas fa-play"></i> Start Game</td></tr>
+                    <tr><td class="link"><i class="fas fa-list-alt"></i> Instructions</td></tr>                    
+                    <tr><td style="margin-bottom: -120px"><i class="fas fa-trophy"></i> <label id="scoreL">Score>>>0</label></td></tr>
+                    <tr><td class="link" onclick="refresh()"><i class="fas fa-sync-alt"></i> Restart Game</td></tr>
+                    <tr><td><a href="index.html"><label class="link" class="lblln"><i class="fas fa-redo"></i> Return</label></a></td></tr>
+                </tbody>
+            </table>
+            </nav>
+            
             <div id="tableroNaval">
-                <table class="table table-naval">
+                <table class="table table-naval" id="navTable">
                     
                     <tbody>
                         <tr>
@@ -81,15 +96,7 @@
                             <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
                         </tr>
                     </tbody>                    
-                </table>
-                <div id="controllers">
-                    <button class="startGame" onclick="assignAutomaticValues()">Start Game</button>
-                    <button class="startGame">Instructions</button>                
-                    <label id="scoreL">Score: 0</label>
-                    <button class="startGame" onclick="refresh()">Restart Game</button>
-                    <a href="index.html"><button class="startGame" style="width: 120px">Return</button></a>
-                </div>
-                
+                </table>                
                 
             </div>
         </div>

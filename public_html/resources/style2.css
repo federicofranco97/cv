@@ -1,3 +1,14 @@
+#navBar
+{
+    border: 2px solid black;
+    position: fixed;
+    top: 0;
+    margin-top: 14%;
+    background-color: black;
+    color: white;
+    padding: 9px;
+}
+
 button
 {
     cursor: pointer;
@@ -68,8 +79,19 @@ h1
 #scoreL
 {
     border: 1px solid black;
-    padding: 8px;
-    width: 20%;
     color:white;
     background-color: black;
+}
+
+.link
+{
+    color: white;
+    cursor: pointer;
+}
+
+table#navUl tr,td
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
 }

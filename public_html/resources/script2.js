@@ -22,14 +22,28 @@ function assignAutomaticValues(){
 }
 
 function selectBoat(sth){
+    var aiCells=document.getElementsByClassName("ai");
+    var cont =0;
+    for(var i=0;i<aiCells.length;i++){
+        if(aiCells[i].name==="boat")cont++;
+    }
+    if(cont===0 && score===0){
+        alert("Presiona Start Game para poder Jugar!");
+        return;
+    }
+   
+    
     if(selectedboats !==4){
         sth.name="boat";
         sth.innerHTML="<i class=\"fas fa-ship\"></i>";
         selectedboats++;
-        console.log(selectedboats);
+        if(selectedboats ===4){
+            fillRestUp();
+            return;
+        }
     }else{
         alert("No more boats to select!");    
-        fillRestUp();
+        
     }   
     
 }
@@ -59,10 +73,11 @@ function usrShoot(sth){
         sth.innerHTML="<i class=\"fas fa-skull\"></i>";   
         sth.name="";
         score++;
-        document.getElementById("scoreL").innerText="Score: "+score;
+        document.getElementById("scoreL").innerText="Score>>>"+score;
         checkWin();
     }else{
-        
+        sth.innerHTML="<i class=\"fas fa-water\"></i>";   
+        sth.name="";
     }
     
 }
