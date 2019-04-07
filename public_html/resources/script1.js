@@ -31,6 +31,7 @@ function disMsg(){
 function changeLight()
 {
     document.getElementById("txtL").style="color:black";
+    document.getElementById("txtL2").style="color:black";
     document.getElementById("mainBody").style="background-color:peru;color:black"; 
     document.getElementById("menuNav").style="background-color:black;color:white;border:1px solid white;";
     var elems= document.getElementsByClassName("lblln");
@@ -43,6 +44,7 @@ function changeLight()
 function changeDark()
 {
     document.getElementById("txtL").style="color:white";
+    document.getElementById("txtL2").style="color:white";
     document.getElementById("mainBody").style="background-color:black;color:white";
     document.getElementById("menuNav").style="background-color:peru;color:black;border:1px solid white;";
     var elems= document.getElementsByClassName("lblln");
