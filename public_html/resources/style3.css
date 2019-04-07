@@ -1,0 +1,27 @@
+#mainBody3
+{
+    background-color: black;
+    color: red;
+}
+
+#titulo
+{
+    margin-left: 38%;
+    margin-top: 5%;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.bug
+{
+    color:red;
+}
+
+#bug1
+{
+    margin-top: 20%;
+    margin-left: 20%;
+    font-size: 200px;
+}
+
+
