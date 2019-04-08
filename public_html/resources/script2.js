@@ -7,6 +7,27 @@
 var selectedboats=0;
 var score=0;
 
+function pcShoot(){
+    
+    var usrCells=document.getElementsByClassName("usr");
+    var ran= Math.trunc(Math.random()*usrCells.length);
+    
+    if(usrCells[ran].innerHTML !== "<i class=\"fas fa-skull\"></i>"){
+        if(usrCells[ran].innerHTML === "<i class=\"fas fa-ship\"></i>"){
+            
+            usrCells[ran].innerHTML = "<i class=\"fas fa-skull\"></i>";
+        }
+        if(usrCells[ran].innerHTML === "<i class=\"fas fa-water\"></i>"){
+            
+        }        
+    }else{
+        pcShoot();
+    }
+    
+}
+
+
+
 function assignAutomaticValues(){
     var aiCells=document.getElementsByClassName("ai");
     var num=Math.trunc(Math.random()*(4));
@@ -79,7 +100,7 @@ function usrShoot(sth){
         sth.innerHTML="<i class=\"fas fa-water\"></i>";   
         sth.name="";
     }
-    
+    pcShoot();
 }
 
 function refresh(){
