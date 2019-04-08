@@ -5,6 +5,7 @@
  */
 
 var selectedboats=0;
+var sunkendboats=0;
 var score=0;
 
 function pcShoot(){
@@ -13,9 +14,41 @@ function pcShoot(){
     var ran= Math.trunc(Math.random()*usrCells.length);
     
     if(usrCells[ran].innerHTML !== "<i class=\"fas fa-skull\"></i>"){
-        if(usrCells[ran].innerHTML === "<i class=\"fas fa-ship\"></i>"){
-            
+        if(usrCells[ran].innerHTML === "<i class=\"fas fa-ship\"></i>"){            
             usrCells[ran].innerHTML = "<i class=\"fas fa-skull\"></i>";
+            sunkendboats++;
+            if(sunkendboats===4){
+                alert("Perdiste!");
+                swal({
+                    title: "Perdiste!!\n Puedes volver a jugar o volver al CV.",                    
+                    className:"red-bg",
+                    dangerMode:true
+                });
+
+                swal("Game End, would you like to play again?", {
+                    className:"red-bg",
+                    buttons: {              
+                        cancel: "Exit",              
+                        play: {                
+                            text: "Play Again",                
+                            value: "play"
+                        }
+
+                    }
+                  })
+                  .then((value) => {
+                    switch (value) {
+
+                      case "play":
+                        location.reload(true);
+                        break;
+
+                      default:
+                        window.location.replace('index.html');
+
+                    }
+                  });
+            }
         }
         if(usrCells[ran].innerHTML === "<i class=\"fas fa-water\"></i>"){
             
@@ -79,7 +112,16 @@ function fillRestUp(){
     }
 }
 
+function checkLoss(){
+    
+}
+
 function usrShoot(sth){
+    if(selectedboats<4) {
+        alert("Primero Selecciona tus barcos!");
+        return;
+    }
+    
     var aiCells=document.getElementsByClassName("ai");
     var cont =0;
     for(var i=0;i<aiCells.length;i++){
@@ -110,8 +152,7 @@ function refresh(){
 function checkWin(){
     if(score===4){
        swal({
-            title: "Good job!",
-            text: "You Won!",
+            title: "Ganaste! Puedes volver a jugar o volver al CV.",
             className:"red-bg",
             dangerMode:true
         });
