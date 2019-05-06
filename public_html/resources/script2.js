@@ -18,7 +18,7 @@ function pcShoot(){
             usrCells[ran].innerHTML = "<i class=\"fas fa-skull\"></i>";
             sunkendboats++;
             if(sunkendboats===4){
-                alert("Perdiste!");
+                
                 swal({
                     title: "Perdiste!!\n Puedes volver a jugar o volver al CV.",                    
                     className:"red-bg",
@@ -50,9 +50,7 @@ function pcShoot(){
                   });
             }
         }
-        if(usrCells[ran].innerHTML === "<i class=\"fas fa-water\"></i>"){
-            
-        }        
+        if(usrCells[ran].innerHTML === "<i class=\"fas fa-water\"></i>"){}        
     }else{
         pcShoot();
     }
